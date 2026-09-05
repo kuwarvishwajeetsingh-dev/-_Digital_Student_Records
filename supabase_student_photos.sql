@@ -1,4 +1,4 @@
-limits the student-photos bucket to 50 KB.
+
 
 alter table public.student
 add column if not exists photo_url text;
