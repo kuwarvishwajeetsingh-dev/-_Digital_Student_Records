@@ -1,5 +1,4 @@
--- Run once in the Supabase SQL Editor.
--- Adds optional profile photos and limits the student-photos bucket to 50 KB.
+limits the student-photos bucket to 50 KB.
 
 alter table public.student
 add column if not exists photo_url text;
