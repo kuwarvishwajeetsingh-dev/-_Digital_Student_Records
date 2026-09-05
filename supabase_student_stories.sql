@@ -1,7 +1,3 @@
--- Run this once in the Supabase SQL Editor.
--- Each student profile can have one story. Everyone can read; only the owner can write.
--- student.id is a UUID in this project. The existing student.id column is not
--- declared UNIQUE, so the relationship is checked through RLS instead of a foreign key.
 
 create table if not exists public.student_stories (
   id uuid primary key default gen_random_uuid(),
