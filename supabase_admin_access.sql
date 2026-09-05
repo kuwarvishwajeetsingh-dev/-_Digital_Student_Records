@@ -1,8 +1,3 @@
--- Run once in the Supabase SQL Editor.
--- Before testing, set the admin user's Supabase Auth app_metadata to:
--- { "role": "admin" }
--- Use app_metadata, not user_metadata, because users cannot safely edit app_metadata.
-
 create or replace function public.is_admin()
 returns boolean
 language sql
